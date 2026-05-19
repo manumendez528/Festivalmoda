@@ -68,7 +68,7 @@ button{
 
     .intro {
         padding-top: 60px;
-        height: 600px;
+        height: 650px;
         background-color: #fddce6;
     }
 
@@ -108,34 +108,90 @@ button{
         gap: 500px;
     }
 
-    .reloj h2 {
-        font-size: 90px;
-        color: #7b3f00;
-       
-        padding-top: 150px;
-    }
-
-    .reloj h1 {
-        font-size: 55px;
-        color:#f5f5dc !important;
-        
-    }
-.buy{
-    background-color: #d3265b;
-    width: 200px;
-    padding-top: 10px;
-   
+ .reloj {
+    font-family: "Jomhuria", serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #f5f5dc;
+    width: 600px;
+    border-radius: 40px;
+    height: auto; 
+    padding-bottom: 20px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
 }
-    .reloj {
-        font-family: "Jomhuria", serif;
-        font-weight: 400;
-        font-style: normal;
-        background-color: #f5f5dc;
-        width: 600px;
-        border-radius: 40px;
-       height: 300px;
-       margin-top: 50px;
-    }
+.reloj h1{
+    color: #f5f5dc;
+    padding-top: 20px;
+    font-size: 90px;
+}
+
+.buy {
+    font-size: 20px; 
+    background-color: #d3265b;
+    width: auto;
+    padding: 5px 25px;
+    border-radius: 0 0 10px 10px; 
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+.contador-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 10px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.tiempo-bloque {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.tiempo-bloque span:first-child {
+    font-family: "Fredoka", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: #d3265b;
+    margin-bottom: 5px;
+}
+
+
+.tarjeta {
+    background-color: #7b3f00;
+    color: #d3265b;
+    font-size: 110px;
+    width: 100px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1;
+}
+
+
+.separador {
+    font-size: 90px;
+    color: #7b3f00;
+    line-height: 1.4;
+    padding: 0 5px;
+}
+
+
+.reloj h2 {
+    font-size: 70px;
+    color: #7b3f00;
+    margin-top: 15px;
+    padding-top: 0; 
+    line-height: 1;}
 
     section {
         height: 650px;
@@ -309,6 +365,48 @@ text-decoration: none;
 
 
 
+
+.intro3{
+        height: 500px;
+        background-color: #fddce6;
+        display: flex;
+        gap:200px;
+        justify-content: center;
+}
+.intro3 h1{
+     font-family: "Jomhuria", serif;
+        font-weight: 400;
+        font-style: normal;
+        text-align: center;
+        font-size: 160px;
+        color: #7b3f00;
+        line-height: 0.5;
+        padding-top: 150px;
+        width: 400px;
+    }
+
+.intro3 p {
+        font-family: "Fredoka", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 350;
+        font-style: normal;
+        text-align: center;
+        font-size: 30px;
+        padding-top: 50px;
+        width: 600px;
+    }
+
+section{
+    height: 800px;
+}
+
+
+
+
+
+
+
+
 @media (max-width: 992px){
    header{
     margin-bottom: 20px;
@@ -449,8 +547,31 @@ display: none;
 
 }  
 
+.intro3{
+    display: flex;
+    flex-wrap: wrap;
+    height: 700px;
+    gap:0;
+}
+.intro3 h1{
+    padding-bottom: 0;
+    padding-top: 50px;
+    height: 60px; 
+}
+
+.intro4{
+ justify-content: center;
+ gap: 0;
+ margin: 0;
+ padding: 0;
+}
+.expo{
+    height: 1150px;
+}
+
 
 }
+
 
 @media (max-width: 768px){
 header{
@@ -487,7 +608,7 @@ nav{
         box-shadow: 2px 5px 0px 2px #7b3f00;
    }
     .intro{
-        height: 700px;}
+        height: 800px;}
     .intro2{
         display: flex;
         flex-wrap: wrap;
@@ -592,5 +713,11 @@ display: none;
     flex-wrap: wrap;
    
 }  
+
+.senoras{
+    width: 200px;
+    display: flex;
+    flex-wrap: wrap;
+}
 
    }

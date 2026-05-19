@@ -20,11 +20,11 @@
         <h1>FIMMED</h1>
     </header>
     <button>Menú</button>
-    <nav> 
+    <nav>
         <ul>
             <li><a href="">Fecha inscripción</a></li>
             <li><a href="">Expositores</a></li>
-            <li><a href="">Categorías</a></li>
+            <li><a href="categorias.html">Categorías</a></li>
             <li><a href="">Logistica</a></li>
             <li><a href="entradas.html">Entradas</a></li>
             <li><a href="">Galerías</a></li>
@@ -36,9 +36,31 @@
         <h2>MEDELLÍN - COLOMBIA</h2>
         <div class="intro2">
             <P><b>NOVIEMBRE 6 DEL 2026 <br> CENTRO DE CONVENCIONES <br> PLAZA MAYOR</b></P>
-
+            
             <div class="reloj">
                 <h1 class="buy">COMPRA TUS ENTRADAS</h1>
+
+                <div class="contador-container">
+                    <div class="tiempo-bloque">
+                        <span>DÍAS</span>
+                        <div class="tarjeta" id="dias">00</div>
+                    </div>
+
+                    <span class="separador">:</span>
+
+                    <div class="tiempo-bloque">
+                        <span>HORAS</span>
+                        <div class="tarjeta" id="horas">00</div>
+                    </div>
+
+                    <span class="separador">:</span>
+
+                    <div class="tiempo-bloque">
+                        <span>MIN</span>
+                        <div class="tarjeta" id="minutos">00</div>
+                    </div>
+                </div>
+
                 <h2>NOS VEMOS EN...</h2>
             </div>
         </div>
@@ -66,7 +88,7 @@
             </article>
         </div>
     </section>
-     <section class="seccion-dos">
+    <section class="seccion-dos">
         <h1>¿QUÉ TE ESPERA?</h1>
         <div class="arts">
             <article>
@@ -75,7 +97,8 @@
                 <img src="img/art1.png" alt="">
             </article>
             <article>
-                <img src="img/art2.png" alt=""><p><b>CONTAMOS CON LA PRESENCIA LAS MARCAS MAS INSPIRADORAS:<br></b>
+                <img src="img/art2.png" alt="">
+                <p><b>CONTAMOS CON LA PRESENCIA LAS MARCAS MAS INSPIRADORAS:<br></b>
                     Baobab <br>
                     Agua by agua bendita<br>
                     Silvia Tcherasii
@@ -83,15 +106,48 @@
             </article>
             <article>
                 <p><b>TENEMOS ALIANZAS CON LOS MEJORES HOTELES PARA TU ESTADIA:</b><br>
-                Hotel Click Clack Medellin <br>
-                Elcielo Hotel </p><img src="img/art3.png" alt="">
+                    Hotel Click Clack Medellin <br>
+                    Elcielo Hotel </p><img src="img/art3.png" alt="">
             </article>
         </div>
-     </section>
+    </section>
     <footer>
         <p> <a href=""><b>CONTACTO: @FIMMED - FIMMED@GMAIL.COM</b></a></p>
         <p><a href=""><b>TÉRMINOS Y CONDICIONES </b></a></p>
     </footer>
+    <script>
+    // Definimos la fecha en la que inicia el festival (6 de Noviembre de 2026)
+    const fechaEvento = new Date('November 6, 2026 00:00:00').getTime();
+
+    const countdown = setInterval(function() {
+        // Obtener la fecha y hora actual
+        const ahora = new Date().getTime();
+        
+        // Calcular la distancia/tiempo restante
+        const distancia = fechaEvento - ahora;
+        
+        // Cálculos de tiempo para Días, Horas y Minutos
+        const dias = Math.floor(distancia / (1000 * 60 * 60 * 24));
+        const horas = Math.floor((distancia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutos = Math.floor((distancia % (1000 * 60 * 60)) / (1000 * 60));
+        
+        // Formatear para que siempre muestre dos dígitos (ej. 06 en lugar de 6)
+        const formatoDias = dias < 10 ? '0' + dias : dias;
+        const formatoHoras = horas < 10 ? '0' + horas : horas;
+        const formatoMinutos = minutos < 10 ? '0' + minutos : minutos;
+        
+        // Insertar los resultados en las tarjetas correspondientes
+        document.getElementById('dias').innerHTML = formatoDias;
+        document.getElementById('horas').innerHTML = formatoHoras;
+        document.getElementById('minutos').innerHTML = formatoMinutos;
+        
+        // Si la cuenta regresiva termina
+        if (distancia < 0) {
+            clearInterval(countdown);
+            document.querySelector('.contador-container').innerHTML = "<div class='tarjeta' style='width:auto; padding: 0 20px;'>¡YA COMENZÓ!</div>";
+        }
+    }, 1000);
+</script>
 </body>
 
 </html>
