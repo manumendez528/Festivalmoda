@@ -1,0 +1,596 @@
+* {
+    padding: 0;
+    margin: 0;
+
+}
+
+    body {
+        background-color: #f5f5dc;
+    }
+
+    header {
+        height: 100px;
+        background-color: #7b3f00;
+        background-image: url(../img/Logo.jpeg);
+        background-size: 100px;
+        background-repeat: no-repeat;
+    }
+
+    header h1 {
+        font-family: "Jomhuria", serif;
+        font-weight: 400;
+        font-style: normal;
+        text-align: center;
+        font-size: 90px;
+        color: #f5f5dc;
+        padding-top: 20px;
+    }
+button{
+    display: none;
+}
+    nav {
+        padding-top: 20px;
+        padding-bottom: 30px;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+
+    }
+
+    nav ul li {
+        background-color: #d3265b;
+        padding: 6px 30px;
+        border-radius: 25px;
+    }
+
+    nav ul li a:link,
+    nav ul li a:visited {
+        text-decoration: none;
+        color: #f5f5dc;
+        font-family: "Fredoka", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 350;
+        font-style: normal;
+        font-variation-settings:
+            "wdth" 100;
+        font-size: 25px;
+
+    }
+
+    nav ul li:hover {
+        text-decoration-line: overline;
+        color: #f5f5dc;
+        box-shadow: 2px 5px 0px 2px #7b3f00;
+    }
+
+    .intro {
+        padding-top: 60px;
+        height: 600px;
+        background-color: #fddce6;
+    }
+
+    .intro h1 {
+        font-family: "Jomhuria", serif;
+        font-weight: 400;
+        font-style: normal;
+        text-align: center;
+        font-size: 160px;
+        color: #7b3f00;
+        line-height: 0.5;
+    }
+
+    .intro h2 {
+        font-family: "Jomhuria", serif;
+        font-weight: 400;
+        font-style: normal;
+        text-align: center;
+        font-size: 120px;
+        color: #d3265b;
+
+    }
+
+    .intro p {
+        font-family: "Fredoka", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 350;
+        font-style: normal;
+        text-align: center;
+        font-size: 30px;
+        padding-top: 150px;
+    }
+
+    .intro2 {
+        display: flex;
+        justify-content: center;
+        gap: 500px;
+    }
+
+    .reloj h2 {
+        font-size: 90px;
+        color: #7b3f00;
+       
+        padding-top: 150px;
+    }
+
+    .reloj h1 {
+        font-size: 55px;
+        color:#f5f5dc !important;
+        
+    }
+.buy{
+    background-color: #d3265b;
+    width: 200px;
+    padding-top: 10px;
+   
+}
+    .reloj {
+        font-family: "Jomhuria", serif;
+        font-weight: 400;
+        font-style: normal;
+        background-color: #f5f5dc;
+        width: 600px;
+        border-radius: 40px;
+       height: 300px;
+       margin-top: 50px;
+    }
+
+    section {
+        height: 650px;
+    }
+
+    section h1 {
+        font-family: "Jomhuria", serif;
+        font-weight: 400;
+        font-style: normal;
+        text-align: center;
+        font-size: 140px;
+        color: #7b3f00;
+        padding-top: 20px;
+
+    }
+
+    article {
+        font-family: "Fredoka", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 350;
+        font-style: normal;
+        text-align: center;
+        font-size: 20px;
+        padding: 20px;
+        max-width: 400px;
+    }
+
+    article p {
+        padding-bottom: 10px;
+    }
+
+    article img {
+        height: 270px;
+        width: 330px;
+        object-fit: cover;
+        border-radius: 30px;
+        padding: 10px;
+    }
+
+    .arts {
+        display: flex;
+        column-count: 3;
+        justify-content: center;
+    }
+.home{
+    height: 30px;
+    padding: 20px;
+}
+    .home a:link, .home a:visited{
+        display:flex;
+        justify-content: center;
+         background-color: #d3265b;
+         width: 200px;
+        padding: 5px 2px;
+        border-radius: 25px;
+        text-decoration: none;
+        color: #f5f5dc;
+        font-family: "Fredoka", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+        font-size: 15px;
+    }
+    .home :hover{
+ text-decoration-line: overline;
+        color: #f5f5dc;
+        box-shadow: 2px 5px 0px 2px #7b3f00;
+
+    }
+    footer {
+        height: 70px;
+        background-color: #7b3f00;
+        display: flex;
+        flex-direction: row;
+        gap: 10%;
+        justify-content: center;
+        padding-top: 45px;
+    }
+
+    footer p a:link,
+    footer p a:visited {
+        color: #f5f5dc;
+        font-family: "Fredoka", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 350;
+        font-style: normal;
+        text-align: center;
+        font-size: 20px;
+        text-decoration: none;
+    }
+
+    footer p a:hover {
+        text-decoration-line: overline;
+        color: #f5f5dc;
+    }
+    .seccion-dos{
+        display: none;
+    }
+
+
+
+
+
+.tickets{
+    justify-content: center;
+    background-color: #fddce6;
+    height: 450px; 
+    padding-bottom: 50px;
+    margin-bottom: 70px;
+}
+.general{
+     height: 200px;
+    padding-bottom: 100px;
+}
+.student{
+    background-color: #fddce6;
+    padding-top: 55px;
+     height: 350px;
+     
+}
+.articulos{
+    display: flex;
+  columns: 3;  
+  column-gap: 100px;
+}
+.cont1 h2{
+    color: #d3265b;
+}
+.cont1 p{
+    width: 400px;
+}
+.cont2 p{
+ width: 450px;
+ text-align: left;
+}
+.cont2 ul{
+    text-align: left;
+list-style:circle;
+}
+.compra{
+      background-color: #d3265b;
+  padding: 6px 30px;
+        border-radius: 25px;
+        height: 45px;
+    margin-top: 60px;
+}
+
+.articulos img{
+    height: 150px;
+    object-fit: cover;
+    
+}
+
+    Article a:link, article a:visited{
+text-decoration: none;
+        color: #f5f5dc;
+        font-family: "Fredoka", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 350;
+        font-style: normal;
+        font-size: 20px;
+      width: 300px;
+    }
+
+    article .compra:hover {
+        text-decoration-line: overline;
+        color: #f5f5dc;
+        box-shadow: 2px 5px 0px 2px #7b3f00;
+    }
+
+
+
+
+
+@media (max-width: 992px){
+   header{
+    margin-bottom: 20px;
+}
+nav{
+    height: 15px;
+}
+ nav ul{
+        display: none;
+    }
+      nav ul{
+        display: none; }
+         .dropdown {
+        background-color: #d3265b;
+        padding: 6px 30px;
+        border-radius: 25px;
+        width: 50px;
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        right: 20px;
+    }
+   button {
+        background-color: #d3265b;
+        padding: 5px 2px;
+        border-radius: 25px;
+       border: 0;
+        width: 150px;
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        right: 20px;
+        text-decoration: none;
+        color: #f5f5dc;
+        font-family: "Fredoka", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 350;
+        font-style: normal;
+        font-variation-settings:
+            "wdth" 100;
+        font-size: 25px;
+    }
+ button:hover{
+        text-decoration-line: overline;
+        color: #f5f5dc;
+        box-shadow: 2px 5px 0px 2px #7b3f00;
+   }
+ .intro{
+        height: 750px;}
+    .intro2{
+        display: flex;
+        flex-direction: column;
+       gap:0px;
+       align-items: center;
+    }
+   .intro h1{
+font-size: 100px; }
+   .intro p{
+    padding:30px;
+    font-size: 25px;
+   }
+   .intro h2{
+    font-size: 80px;
+   }
+   .reloj h1{
+    font-size: 60px;
+   }
+   .reloj h2{
+    font-size: 60px;}
+
+   .arts{
+    display: flex;
+    flex-wrap: wrap;
+   
+   }
+   article{
+    font-size: 15px;
+    width: 300px;
+   }
+   article img{
+    width: 260px;
+    height: 200px;
+   }
+   section{
+    height: 890px;}
+    .home{
+        display: block;
+    }
+
+
+
+
+
+  .tickets{
+    height: 500px;
+    margin-bottom: 10px;
+    padding-bottom: 30px;
+    justify-items: center;
+   }
+ 
+   .general{
+    display: flex;
+    flex-wrap: wrap;
+justify-content: center;
+     height: 250px;
+     
+   } 
+   .student{
+     display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    justify-content: center;
+   }
+   .compra{
+    margin-left: 65px;
+    height: 25px;
+    margin-top: 20px;
+   }
+  
+   .articulos{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 100px;
+    padding-right: 100px;
+   }
+.articulos img{
+display: none;
+}
+.cont1 h2{
+    margin-top: 0;
+    padding-bottom: 20px;
+}
+.cont1 p{
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+
+}  
+
+
+}
+
+@media (max-width: 768px){
+header{
+    margin-bottom: 20px;
+}
+nav{
+    height:15px;
+}
+    nav ul{
+        display: none; }
+    button {
+        background-color: #d3265b;
+        padding: 5px 2px;
+        border-radius: 25px;
+       border: 0;
+        width: 150px;
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        right: 20px;
+        text-decoration: none;
+        color: #f5f5dc;
+        font-family: "Fredoka", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 350;
+        font-style: normal;
+        font-variation-settings:
+            "wdth" 100;
+        font-size: 25px;
+    }
+ button:hover{
+        text-decoration-line: overline;
+        color: #f5f5dc;
+        box-shadow: 2px 5px 0px 2px #7b3f00;
+   }
+    .intro{
+        height: 700px;}
+    .intro2{
+        display: flex;
+        flex-wrap: wrap;
+       gap:50px;}
+   .intro h1{
+font-size: 90px; }
+   .intro p{
+    padding:30px;
+    font-size: 25px;
+   }
+   .intro h2{
+    font-size: 80px;
+   }
+   .reloj h1{
+    font-size: 60px;
+   }
+   .reloj h2{
+    font-size: 60px;} 
+    section{
+        display: none;
+    }
+ .seccion-dos{
+        display: contents;
+    }
+   .seccion-dos .arts{
+   display: flex;
+   flex-wrap: wrap;
+   }
+   .seccion-dos article{
+    font-size: 12px;
+    width: 600px;
+    display: flex;
+    text-align: left;
+   }
+   article img{
+    width: 200px;
+    height: 150px;
+   }
+  .seccion-dos p{
+    padding-top: 40px;
+  }
+   .seccion-dos{
+    height: 1170px;
+   }
+   .seccion-dos h1{
+    font-size: 90px;
+   }
+   footer{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px;
+   }
+
+
+
+
+  .tickets{
+    display:flex;
+    flex-wrap: wrap;
+    height: 500px;
+    margin-bottom: 10px;
+    padding-bottom: 30px;
+
+   }
+ 
+   .general{
+    display: flex;
+    flex-wrap: wrap;
+justify-content: center;
+     height: 250px;
+     
+   } 
+   .student{
+     display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    justify-content: center;
+   }
+   .compra{
+    margin-left: 65px;
+    height: 25px;
+    margin-top: 20px;
+   }
+  
+   .articulos{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 100px;
+    padding-right: 100px;
+   }
+.articulos img{
+display: none;
+}
+.cont1 h2{
+    margin-top: 0;
+    padding-bottom: 20px;
+}
+.cont1 p{
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+   
+}  
+
+   }
